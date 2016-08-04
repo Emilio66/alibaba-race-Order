@@ -21,4 +21,4 @@ I have tried to copy the source file and distribute them in a orgainzed way, but
 4. Waiting for completion of each buckets' indices building, then load part of data into memory for cache, utilize Direct Memory for cache partly due to the limitation of memory
 5. Answer queries, analyze the query key to avoid unnecessary disk access, first look at the memory cache, if not hit, get the index bucket according to their key, find the <pk, offset> use hash, then retrive required rows in source data file according to the offset
 
-
+![architecture](architecture.jpg)
