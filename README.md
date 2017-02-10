@@ -1,13 +1,13 @@
-# alibaba-race-Order
-> Middleware challenging race
+# alibaba-race-Order System
+> Middleware challenging race season 2
 
 ##Problem https://code.aliyun.com/MiddlewareRace/order-system
 
 
 > Description:
 
-  At Alibaba's, there're millions transaction records were generated everyday, they were saved in different log files according to the record type, such as orders, buyers, goods, etc. The log files are usually very large and their size are not fixed, sometimes large than the main memory. Each record in the log file is a sequence in a row consists of multiple key-value pairs separated by '\t'. 
-  To simulate the problem and not expose customers' privacy, we generate more than 100G **order** log files, more than 4G **goods** and **buyer** log files. There're many fields in each record, the fields that must occur in log file are as follows: 
+  At Alibaba, millions transaction records were generated everyday, besides storing in database, they were also saved in different log files according to the record type, such as order, buyer, good, etc. The log files are usually very large and their size are not fixed, sometimes large than the main memory. Each record in the log file is a sequence in a row which consists of multiple key-value pairs separated by '\t'. 
+  To simulate the problem and not expose customers' privacy, we use program to generate more than 100G **order** log files, more than 4G **goods** and **buyer** log files. There're many fields in each record, the fields that must occur in log file are as follows: 
   
   
   **Order log file's minimum fields**
